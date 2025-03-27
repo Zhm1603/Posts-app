@@ -1,0 +1,46 @@
+:root{
+    --text-color:rgba(255, 255, 255, 0.4);
+    --text-size:10px;
+    --color-header:rgba(255, 255, 255, 0.03);
+    --light-row: rgba(255, 255, 255, 0.02);
+    --dark-row: rgba(255, 255, 255, 0.1);
+
+
+
+
+}
+.users-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+thead{
+    
+    background: var(--color-header);
+    backdrop-filter: blur(30px);
+
+}
+tr{
+
+    height: 27px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: var(--text-size);
+    line-height: 100%;
+    letter-spacing: 2%;
+    color:var(--text-color);
+}
+th{
+    padding-left:10px;
+    text-align: left;
+    height: 43px;
+}
+td{
+    padding-left:10px;
+}
+.light{
+    background: var(--light-row);
+}
+.dark{
+    background: var(--dark-row);
+}
