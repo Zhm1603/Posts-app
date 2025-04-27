@@ -33,7 +33,7 @@ input:-webkit-autofill {
     color: var(--text-color);
     border-radius: 44px;
     transition: 0.3s;
-
+    border:0px;
 }
 
 .search-line:hover{
