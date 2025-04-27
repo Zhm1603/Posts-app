@@ -1,16 +1,14 @@
-
 import React from "react";
-import "./style.css"
+import "./style.css";
+import Searching from "../../components/Searching";
 
-const AllPostsPage = ({children}) => {
-    return(
+const AllPostsPage = ({ children }) => {
+  return (
     <div className="all-posts-container">
-        <div class="search-container">
-            
-            <input className="search-line" type="text" placeholder="   🔍︎  Поиск.." name="search" />          
-        </div>
-        <div className="posts-content">{children}</div>
-    </div>)
-}
+      <Searching />
+      <div className="posts-content">{children}</div>
+    </div>
+  );
+};
 
 export default AllPostsPage;
