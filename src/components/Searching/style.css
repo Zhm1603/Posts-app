@@ -1,0 +1,55 @@
+:root{
+    --background-color-main: linear-gradient(0deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)),
+    linear-gradient(180.47deg, rgba(251, 251, 251, 0.03) 1.1%, rgba(255, 255, 255, 0) 77.2%),
+    linear-gradient(180deg, rgba(82, 187, 77, 0.06) 0%, rgba(82, 187, 77, 0) 31.76%),
+    linear-gradient(180deg, rgba(82, 187, 77, 0.06) 0%, rgba(82, 187, 77, 0) 72.46%);
+    --background-color-search-line-cont: rgba(255, 255, 255, 0.15);
+    --background-color-search-line:rgba(30, 30, 30, 1);
+    --text-color:rgba(255, 255, 255, 0.4);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--background-color-search-line) inset !important;
+    box-shadow: 0 0 0 1000px var(--background-color-search-line) inset !important;
+    -webkit-text-fill-color: var(--text-color); 
+}
+
+.search-container{
+    background: var(--background-color-search-line-cont);
+    backdrop-filter: blur(30px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height:106px;
+    display: flex;
+    align-items: center;  
+}
+
+.search-line{
+    max-width: 193px;
+    height: 44px;
+    width: 100%;
+    padding-left: 40px;
+    background: var(--background-color-search-line);
+    color: var(--text-color);
+    border-radius: 44px;
+    transition: 0.3s;
+
+}
+
+.search-line:hover{
+    max-width: 400px;
+    transition: 0.3s;
+}
+
+.input-container{
+    position: absolute;
+    z-index: 1;
+}
+
+.search-icon-container{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
