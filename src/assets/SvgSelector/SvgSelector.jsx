@@ -5,6 +5,7 @@ import phone from "../svg/phone.svg";
 import phoneBlured from "../svg/phoneBlured.svg";
 import searchLogo from "../svg/searchLogo.svg";
 import themeBtnIcon from "../svg/themeBtnIcon.svg";
+import themeBtnIconDark from "../svg/themeBtnIconDark.svg"
 
 const SvgSelector = ({name}) => {
     let iconPath;
@@ -30,6 +31,9 @@ const SvgSelector = ({name}) => {
             break;
         case "themeBtnIcon":
             iconPath = themeBtnIcon
+            break;
+        case "themeBtnIconDark":
+            iconPath = themeBtnIconDark
             break;
         default:
             iconPath = (<></>);
