@@ -50,11 +50,16 @@ input:-webkit-autofill {
   border-radius: 44px;
   transition: 0.3s;
   border: 0px;
+  outline: none;
 }
 
 .search-line:hover {
   max-width: 400px;
   transition: 0.3s;
+}
+.search-line:focus{
+  max-width: 400px;
+
 }
 
 .input-container {
