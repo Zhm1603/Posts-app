@@ -1,2 +1,4 @@
 .layout{
-    display: flex; }
+    display: flex; 
+    background: var(--main-color);
+}

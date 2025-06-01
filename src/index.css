@@ -5,15 +5,109 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-    background: linear-gradient(0deg, #1E1E1E, #1E1E1E),
+  --main-color:linear-gradient(0deg, #1E1E1E, #1E1E1E),
 radial-gradient(43.98% 71.63% at 3.19% 94.8%, rgba(242, 158, 29, 0.05) 0%, rgba(242, 158, 29, 0) 100%),
 radial-gradient(14.59% 23.76% at 3.19% 93.56%, rgba(242, 158, 29, 0.05) 0%, rgba(242, 158, 29, 0) 100%),
 linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
-
-
-
+  /*searching*/
+  --background-color-main: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.07)
+    ),
+    linear-gradient(
+      180.47deg,
+      rgba(251, 251, 251, 0.03) 1.1%,
+      rgba(255, 255, 255, 0) 77.2%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(82, 187, 77, 0.06) 0%,
+      rgba(82, 187, 77, 0) 31.76%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(82, 187, 77, 0.06) 0%,
+      rgba(82, 187, 77, 0) 72.46%
+    );
+  --background-color-search-line-cont: rgba(255, 255, 255, 0.15);
+  --background-color-search-line: rgba(30, 30, 30, 1);
+  --text-color: rgba(255, 255, 255, 0.4);
+  --header-bg: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.07)
+    ),
+    linear-gradient(
+      180.47deg,
+      rgba(251, 251, 251, 0.03) 1.1%,
+      rgba(255, 255, 255, 0) 77.2%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(82, 187, 77, 0.06) 0%,
+      rgba(82, 187, 77, 0) 31.76%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(82, 187, 77, 0.06) 0%,
+      rgba(82, 187, 77, 0) 72.46%
+    );
 }
+body.light{
+    --main-color:linear-gradient(0deg,#ede2e2, #cceace ),
+radial-gradient(43.98% 71.63% at 3.19% 94.8%, rgba(242, 158, 29, 0.05) 0%, rgba(242, 158, 29, 0) 100%),
+radial-gradient(14.59% 23.76% at 3.19% 93.56%, rgba(242, 158, 29, 0.05) 0%, rgba(242, 158, 29, 0) 100%),
+linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
+--header-bg: linear-gradient(
+      0deg,
+      rgba(92, 124, 69, 0.07),
+      rgba(92, 124, 69, 0.07)
+    ),
+    linear-gradient(
+      180.47deg,
+      rgba(92, 124, 69, 0.03) 1.1%,
+      rgba(92, 124, 69, 0) 77.2%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(92, 124, 69, 0.06) 0%,
+      rgba(92, 124, 69, 0) 31.76%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(82, 187, 77, 0.06) 0%,
+      rgba(82, 187, 77, 0) 72.46%
+    );
+  /*searching*/
+  --background-color-main: linear-gradient(
+      0deg,
+      rgba(175, 168, 168, 0.07),
+      rgba(175, 168, 168, 0.07)
+    ),
+    linear-gradient(
+      180.47deg,
+      rgba(175, 168, 168, 0.03) 1.1%,
+      rgba(175, 168, 168, 0) 77.2%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(14, 111, 9, 0.06) 0%,
+      rgba(14, 111, 9, 0) 31.76%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(62, 157, 56, 0.06) 0%,
+      rgba(62, 157, 56, 0) 72.46%
+    );
+  --background-color-search-line-cont: rgba(242, 245, 239, 0.844);
+  --background-color-search-line: rgb(219, 210, 210);
+  --text-color: rgba(255, 255, 255, 0.4);
+}  
+    
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

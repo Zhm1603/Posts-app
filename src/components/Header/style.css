@@ -2,8 +2,11 @@
   padding-top: 16px;
   padding-left: 10px;
   padding-right: 10px;
+  display: flex;
   width: 50px;
+  height: 5%;
 }
+
 .nav-bar {
   height: 100vh;
   display: flex;
@@ -14,12 +17,13 @@
   gap: 20px;
 }
 
-.toggle-switch {
-  display: none;
+.toggle {
+  cursor: pointer;
+  display: inline-block;
 }
 
-.toggle-container {
-  position: relative;
+.toggle-switch {
+   position: relative;
   width: 84px;
   height: 44px;
   display: flex;
@@ -31,33 +35,33 @@
   transition: background-color 0.3s;
   transform: rotate(90deg);
 }
-span {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transform: rotate(-90deg);
-  margin: 12px 12px 12px 12px;
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
 }
-
-.toggle-dot {
-  position: absolute;
-  top: 4px;
-  left: 4px;
+.toggle-switch:before {
+  display: block;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 100%;
+  border:none;
   width: 36px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
-  transition: transform 0.3s ease;
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  transition: left 0.25s;
 }
 
-.toggle-dot.checked {
-  transform: translateX(36px);
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 40px;
 }
-.div-toggle-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
 }
+
+
 .header-vertical {
   height: 100vh;
   width: 60px;
@@ -66,26 +70,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.07),
-      rgba(255, 255, 255, 0.07)
-    ),
-    linear-gradient(
-      180.47deg,
-      rgba(251, 251, 251, 0.03) 1.1%,
-      rgba(255, 255, 255, 0) 77.2%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(82, 187, 77, 0.06) 0%,
-      rgba(82, 187, 77, 0) 31.76%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(82, 187, 77, 0.06) 0%,
-      rgba(82, 187, 77, 0) 72.46%
-    );
+  background: var(--header-bg);
 }
 .button-container{
   padding-bottom: 6px;
