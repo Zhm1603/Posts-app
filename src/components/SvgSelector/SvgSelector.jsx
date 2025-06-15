@@ -1,29 +1,29 @@
-import cube from "../svg/cube.svg";
-import cubeBlured from "../svg/cubeBlured.svg";
-import logo from "../svg/Logo.svg";
-import phone from "../svg/phone.svg";
-import phoneBlured from "../svg/phoneBlured.svg";
-import searchLogo from "../svg/searchLogo.svg";
-import themeBtnIcon from "../svg/themeBtnIcon.svg";
-import themeBtnIconDark from "../svg/themeBtnIconDark.svg"
+import cube from "../../assets/svg/cube.svg";
+import cubeBlured from "../../assets/svg/cubeBlured.svg";
+import logo from "../../assets/svg/Logo.svg";
+import phone from "../../assets/svg/phone.svg";
+import phoneBlured from "../../assets/svg/phoneBlured.svg";
+import searchLogo from "../../assets/svg/searchLogo.svg";
+import themeBtnIcon from "../../assets/svg/themeBtnIcon.svg";
+import themeBtnIconDark from "../../assets/svg/themeBtnIconDark.svg"
 
 const SvgSelector = ({name}) => {
     let iconPath;
 
     switch(name){
-        case "cube":
+        case "cube ":
             iconPath = cube;
             break;
-        case "cubeBlured":
+        case "cube Blured":
             iconPath = cubeBlured;
             break;
         case "logo":
             iconPath = logo
             break;
-        case "phone":
+        case "phone ":
             iconPath = phone
             break;
-        case "phoneBlured":
+        case "phone Blured":
             iconPath = phoneBlured
             break;
         case "searchLogo":

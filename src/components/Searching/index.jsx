@@ -1,5 +1,5 @@
 import React from "react";
-import SvgSelector from "../../assets/SvgSelector/SvgSelector";
+import SvgSelector from "../SvgSelector/SvgSelector";
 import "./style.css";
 
 const Searching = () => {

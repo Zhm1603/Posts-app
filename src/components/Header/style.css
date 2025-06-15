@@ -3,6 +3,7 @@
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
+  align-items: center;
   width: 50px;
   height: 5%;
 }
@@ -17,48 +18,68 @@
   gap: 20px;
 }
 
-.toggle {
+.toggle-container {
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.toggle-switch {
-   position: relative;
+.toggle-dot {
+  position: relative;
   width: 84px;
   height: 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 0.2);
   border-radius: 9999px;
   cursor: pointer;
   transition: background-color 0.3s;
   transform: rotate(90deg);
 }
-.toggle-switch:before, .toggle-switch:after {
+.cube-container{
+  display:flex;
+  align-items: center;
+  position:relative;
+  top: 17%;
+}
+.phone-container{
+  display:flex;
+  align-items: center;
+  position: relative;
+  bottom:17%
+}
+.toggle-dot:before,
+.toggle-dot:after {
   content: "";
 }
-.toggle-switch:before {
+
+.toggle-dot:before {
   display: block;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgb(255 255 255 / 0.15);
   border-radius: 100%;
-  border:none;
+  border: none;
   width: 36px;
   height: 36px;
   position: absolute;
   top: 4px;
   left: 7px;
-  transition: left 0.25s;
+  transition: left 0.25s ease-in-out;
 }
 
-
-.toggle-checkbox:checked + .toggle-switch:before {
-  left: 40px;
+.toggle-dot.active:before {
+  left: 41px; 
+  
 }
 
-.toggle-checkbox {
-  position: absolute;
-  visibility: hidden;
+.toggle-dot::after {
+  position: relative;
+  top: 4px;
+  left: 7px;
+  transform: translate(30%);
 }
 
 
